@@ -1,2 +1,3 @@
 # PortMapping
-wsl2 docker 端口映射到主机
+
+解决外网访问wsl中docker服务
