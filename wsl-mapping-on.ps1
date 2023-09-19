@@ -56,7 +56,7 @@ foreach ($key in $portMapping.Keys) {
     $port = $portMapping[$key]    
     netsh interface portproxy add v4tov4  listenport=$key listenaddress=0.0.0.0  connectport=$key connectaddress=$wslIpv4
     netsh interface portproxy add v6tov4  listenport=$key listenaddress=::  connectport=$key connectaddress=$wslIpv4
-    Write-Host "Docker映射到主机端口$port"
+    Write-Host "Docker映射到主机端口 $port"
 }
 
 # $wslIpv6 =  ((wsl ip addr show eth0 | Select-String -Pattern "inet6").ToString().Split() | Select-String -Pattern "/64").ToString().Split('/')[0].Trim()
