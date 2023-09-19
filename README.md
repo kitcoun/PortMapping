@@ -1,3 +1,7 @@
 # PortMapping
 
 解决外网访问wsl中docker服务
+
+自动把docker服务中端口映射到主机，外网可以通过ipv6和ipv4访问wsl2中的docker服务
+
+使用管理员权限cmd等执行xxx.ps1文件
