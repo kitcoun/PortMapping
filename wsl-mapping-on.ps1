@@ -34,7 +34,7 @@ foreach ($portMapping in $portMappingsv6tov4) {
 
 # 获取 WSL2 宿主机的 IP地址
 $wslIpv4 =  (wsl hostname -I).Trim().Split(' ')[0]
-Write-Host "WSL2 宿主机的IP地址:$wslIpv4"
+Write-Host "WSL2的IP地址:$wslIpv4"
 # netsh interface portproxy add v4tov4  listenport=8096 listenaddress=0.0.0.0  connectport=8096 connectaddress=$wslIpv4
 # netsh interface portproxy add v4tov4  listenport=8920 listenaddress=0.0.0.0  connectport=8920 connectaddress=$wslIpv4
 # netsh interface portproxy add v4tov4  listenport=1900 listenaddress=0.0.0.0  connectport=1900 connectaddress=$wslIpv4
